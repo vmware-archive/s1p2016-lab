@@ -1,6 +1,6 @@
 ---
 instances: 1
-memory: 512M
+memory: 768M
 applications:
 - name: fortune-service
   host: fortunes
@@ -18,4 +18,4 @@ applications:
   - circuit-breaker
 env:
   SPRING_PROFILES_ACTIVE: pcf
-  CF_TARGET: https://api.cf.deepsouth.com
+  TRUST_CERTS: api.sys.pcf.space
